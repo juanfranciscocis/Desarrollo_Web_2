@@ -1,0 +1,25 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+body{
+    height: 100vh; /* 100% del alto de la pantalla */
+    background-color: #625c5c;
+}
+
+.centrat-flex{
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+#contenedor{
+    width: 500px;
+    height: 250px;
+    background-color: white;
+    border: 5px solid black;
+}

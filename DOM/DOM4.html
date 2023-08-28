@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MODIFICAR EL DOM CON JS LISTAS</title>
+</head>
+<body>
+
+	<ul id="lista">
+		<li>Elemento 1</li>
+		<li>Elemento 2</li>
+		<li>Elemento 3</li>
+	</ul>
+	<button id="agregar">Nuevo Elemento</button>
+	<button id="quitar">Quitar Elemento</button>
+
+	<script>
+		//VARIABLES
+		const lista = document.getElementById('lista');
+		const btnAgregar = document.getElementById('agregar');
+		const btnQuitar = document.getElementById('quitar');
+
+		btnAgregar.addEventListener('click',() =>{
+
+			//CREO UN NUEVO ELEMENTO DE LISTA
+			const nuevo = document.createElement('li');
+			nuevo.textContent = "Nuevo Elemento";
+
+
+			//AGREGO EL NUEVO ELEMENTO A LA LISTA
+			lista.appendChild(nuevo);
+			lista.getAttributeNames();
+		});
+
+		btnQuitar.addEventListener('click',() => {
+			//elimino el ultimo elemento de la lista
+			if(!lista.hasChildNodes()){
+				return;
+			}
+			lista.removeChild(lista.lastChild); //OJO REMOVE -> ELIMINA EL ELEMENTO COMPLETO OSEA LA LISTA, REMOVECHILD -> ELIMINA EL HIJO DE LA LISTA
+		});
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

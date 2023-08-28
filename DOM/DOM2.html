@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>EJEMPLO DE MODIFICACION DEL DOM</title>
+	<style>
+		.fondo {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>Bienvenido</h1>
+	<p id="texto">Este es un bloque de texto</p>
+	<h1 class="fondo">USFQ</h1>
+
+	<script>
+		//COMO SELECIONAMOS ELEMENTOS DEL DOM?
+		const titulo = document.getElementsByTagName('h1'); //VARIOS ELEMENTOS H1'S
+		console.log(titulo);
+		const texto = document.getElementById('texto'); //SOLO EL ELEMENTO CON ID TEXTO
+		console.log(texto);
+		const fondo = document.getElementsByClassName('fondo'); //VARIOS ELEMENTOS CON CLASE FONDO
+		console.log(fondo);
+		const cabecera = document.querySelector('#texto'); //ETIQUETA, UN ID O UNA CLASE (H1, #TEXTO, .FONDO)
+		console.log(cabecera);
+		const titulos = document.querySelectorAll('h1'); //TODOS LOS ELEMENTOS H1
+		console.log(titulos);
+	</script>
+
+
+
+
+</body>
+</html>

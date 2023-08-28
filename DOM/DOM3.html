@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MODIFICAR EL DOM CON JS</title>
+	<style>
+		.fondo{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<p id="texto">
+		Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+		dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+		clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	</p>
+	<button id="boton">Cambiar Texto</button>
+
+	<script>
+		//COMO SELECIONAMOS ELEMENTOS DEL DOM
+		const parrafo = document.getElementById('texto');
+		const boton = document.getElementById('boton');
+
+		boton.addEventListener('click', () => {
+			parrafo.textContent = "Este es un nuevo texto";
+			parrafo.classList.add('fondo');
+			parrafo.innerHTML = "<div class='fondo'><p>este es un nuevo texto</p><h1>otro texto!!!<h1/></div>";
+			boton.classList.add('fondo');
+		});
+
+
+
+
+
+	</script>
+
+
+
+
+
+</body>
+</html>
