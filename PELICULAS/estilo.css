@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box; /* ?? sirve para que el padding no se sume al width */
+}
+
+body {
+    background-color: darkslategrey;
+    margin: 0;
+}
+
+header {
+    background-color: #172525;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem; /* 16px */
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid darkslategrey;
+    border-radius: 30px;
+    color: white;
+    font-size:1rem;
+    padding: 0.5rem 1rem; /* 8px horizontal 16px vertical */
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos se pongan en fila en caso de que el tamano sea pequeno*/
+}
+
+.pelicula{
+    backgrpund-color: #172525;
+    border-radius: 0.5rem;
+    overflow: hidden; /* Para que no se salga la imagen */
+    position: relative; /* Para que el hover funcione */
+    margin: 1rem;
+    width: 300px;
+}
+
+.pelicula img {
+    width: 100%;
+}
+
+.info{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+.info h3{
+    margin: 0;
+}
+
+.info span{
+    background-color: darkslategrey;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+
+.info span:green {
+    color: green;
+}
+
+.info span:orange {
+    color: orangered;
+}
+
+.info span:red {
+    color: red;
+}
+
+.sinopsis{
+    background-color: white;
+    padding: 2rem;
+    position: absolute; /* Para que se ponga encima de la imagen */
+    max-width: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+}
+
+.sinopsis h3{
+    margin-top: 0;
+}
+
+.pelicula:hover .sinopsis{
+    transform:translateY(0%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
