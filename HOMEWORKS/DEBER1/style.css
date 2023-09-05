@@ -1,0 +1,64 @@
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10rem;
+}
+
+#car-label{
+    background-color: grey;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0.5px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+}
+.card-title{
+    margin: 10px 0px;
+}
+
+.color-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centrar verticalmente */
+    padding: 0px;
+}
+
+
+.newPrice{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+    padding: 0px 0px 0px 40px;
+}
+
+.price{
+    font-size: 1rem;
+    color: black;
+    padding: 0px 0px 0px 5px;
+    text-decoration: line-through;
+}
+
+
+.color-buttons{
+    background-color: transparent;
+    border: none;
+}
+
+.button {
+    color: white;
+    background-color: grey;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

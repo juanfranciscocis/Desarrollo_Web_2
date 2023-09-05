@@ -21,7 +21,7 @@ body{
     align-items: center; /* Centrar verticalmente */
     flex-wrap: wrap;
 }
-.contenedor{
+.container{
     width: 80vw;
     max-width: 600px;
     min-height: 600px;
