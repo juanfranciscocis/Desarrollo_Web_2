@@ -55,21 +55,21 @@ main{
 }
 
 .info span{
-    background-color: darkslategrey;
+    background-color: #949494;
     border-radius: 4px;
     font-weight: bold;
     padding: 0.25rem 0.5rem;
 }
 
-.info span:green {
+.info span.green {
     color: green;
 }
 
-.info span:orange {
+.info span.orange {
     color: orangered;
 }
 
-.info span:red {
+.info span.red {
     color: red;
 }
 
